@@ -1,0 +1,29 @@
+<!-- Liudmila Zyrianova
+Assignment 3 Page 1 Problem 1 
+1/7/2019 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="A3_CSS.css" />
+    </head>
+    <body>
+        <div class = "block">                
+            <button class="button" onclick="iMRight()">Click me</button>
+            <div class="divider" id="resp" > </div>
+            <button class="button" onclick="iMRight()">No, Click me!</button>                  
+        </div>        
+    </body>
+</html>
+
+<script>
+    var global = false;
+    function iMRight() {
+        if (global == false){
+            document.getElementById("resp").innerHTML = "I'm right";
+            global = true;
+        } else {
+            document.getElementById("resp").innerHTML = "No, I'm right!";
+            global = false;
+        }        
+    }
+</script>
