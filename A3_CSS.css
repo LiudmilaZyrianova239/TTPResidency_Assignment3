@@ -1,0 +1,113 @@
+/* Liudmila Zyrianova
+   Assignment 3 CSS Problem 5
+   1/7/2019*/
+
+/* Background */
+body {
+  background-image: url("https://i.stack.imgur.com/p9mUO.jpg");
+}
+
+/* Placement of buttons in the middle of the page */
+.block {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Space between 2 buttons in Problem 1*/
+.divider{
+  width:15%;
+  height:auto;
+  display:inline-block;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center; 
+}
+
+/*Buttons in Problems 1 and 2*/
+.button {
+  background-color: white; 
+  border: 4px solid #555555;
+  border-radius: 8px;
+  color:black;
+  padding: 16px 32px;
+  text-align: center; 
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif; 
+  margin: 8px 4px;  
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #555555;
+  box-shadow: 0 12px 16px 0 rgba(134, 105, 105, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.bottoncenter {
+  margin:auto;
+  display:block;
+}
+/*Remove blue border from css custom-styled button in Chrome*/
+button:focus {
+  outline:0;
+}
+
+/*Header*/
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+/*Form*/
+form {
+	display: flex;
+	flex-direction: column;
+}
+.copy {
+	float: right;
+	color: grey;
+}
+.page {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	padding-left: 20px;
+}
+input[type=text], select, textarea {
+  font-family: Arial, Helvetica, sans-serif; 
+  width: 100%;
+  padding: 12px;
+  border: 1px solid whitesmok;
+  border-radius: 4px;
+}
+input[type=text]:focus {
+  outline:0;
+}
+input[type=submit] {
+  font-family: Arial, Helvetica, sans-serif; 
+  background-color: whitesmoke; 
+  border: 4px solid #555555;
+  border-radius: 16px;
+  color: black;
+  padding: 12px 20px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: right;
+  width: 15%;  height: 100%;
+  margin:0 auto;
+}
+input[type=submit]:hover {
+  background-color: #555555;
+  box-shadow: 0 12px 16px 0 rgba(134, 105, 105, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input[type=submit]:focus {
+  outline:0;
+}
